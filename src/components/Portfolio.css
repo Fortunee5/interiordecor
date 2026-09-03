@@ -1,0 +1,149 @@
+.portfolio-section {
+  background-color: var(--color-white);
+}
+
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.portfolio-eyebrow {
+  display: block;
+  color: var(--color-amber-600);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .portfolio-title {
+    font-size: 3rem;
+  }
+}
+
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-btn {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-500);
+  transition: all 0.3s ease;
+}
+
+.filter-btn-active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.filter-btn:hover:not(.filter-btn-active) {
+  background-color: var(--color-gray-200);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  cursor: pointer;
+}
+
+.project-image-container {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-category {
+  color: var(--color-amber-400);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  transform: translateY(1rem);
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-category {
+  transform: translateY(0);
+}
+
+.project-card-title {
+  color: var(--color-white);
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  transform: translateY(1rem);
+  transition: transform 0.5s ease 0.075s;
+}
+
+.project-card:hover .project-card-title {
+  transform: translateY(0);
+}
