@@ -21,7 +21,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="contact-detail-label">Phone</h4>
-                  <p className="contact-detail-value">+1 (555) 123-4567</p>
+                  <p className="contact-detail-value">+233532621272</p>
                 </div>
               </div>
               <div className="contact-detail-item">
@@ -30,7 +30,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="contact-detail-label">Email</h4>
-                  <p className="contact-detail-value">hello@intriodesign.com</p>
+                  <p className="contact-detail-value">hello@ardengraphics.com</p>
                 </div>
               </div>
               <div className="contact-detail-item">
@@ -39,7 +39,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="contact-detail-label">Studio</h4>
-                  <p className="contact-detail-value">123 Design Avenue, Creative Quarter<br />New York, NY 10001</p>
+                  <p className="contact-detail-value">BT-0137-2099<br />Accra, Ghana</p>
                 </div>
               </div>
             </div>

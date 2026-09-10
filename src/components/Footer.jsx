@@ -1,4 +1,4 @@
-import { Globe, Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
+import {  ArrowUp } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,17 +11,28 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand-section">
-            <h3 className="footer-logo">INTRIO</h3>
+            <h3 className="footer-logo">ArdenGraphics</h3>
             <p className="footer-tagline">
               We specialize in creating bespoke interiors that harmonize 
               luxury, comfort, and functionality for discerning clients worldwide.
             </p>
             <div className="footer-socials">
-              {[Globe, Mail, Phone, MapPin].map((Icon, i) => (
-                <a key={i} href="#" className="social-link">
-                  <Icon size={18} />
-                </a>
-              ))}
+              <a href="https://www.instagram.com/ardengraphics" className="social-link">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -65,7 +76,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="copyright">
-            © {new Date().getFullYear()} INTRIO. All rights reserved. 
+            © {new Date().getFullYear()} ArdenGraphics. All rights reserved. 
           </p>
           <div className="footer-legal">
             <a href="#" className="legal-link">Privacy Policy</a>

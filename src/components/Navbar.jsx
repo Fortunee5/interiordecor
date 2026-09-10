@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container navbar-container">
         <a href="#" className="navbar-logo">
-          INTRIO
+          ArdenGraphics
         </a>
 
         <div className="navbar-links-desktop">
